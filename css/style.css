@@ -684,3 +684,126 @@ aside span {
     background: #4C5661;
     border-radius: 60px;
 }
+
+.page {
+    padding-left: 100px;
+}
+
+.page img {
+    /*margin-top: 140px;*/
+}
+
+.page .info .name {
+    font-size: 48px;
+    line-height: 140px;
+}
+
+.page .info .separator {
+    font-size: 48px;
+    line-height: 140px;
+}
+
+.page .info .author {
+    font-size: 36px;
+    line-height: 140px;
+}
+
+.info {
+    display: flex;
+}
+
+.Column {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoBar {
+    width: 640px;
+    height: 100px;
+    background: #FBFBFB;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+}
+
+.infoTab {
+    width: 160px;
+    border: 1px solid #E0D6D6;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-align: center;
+}
+
+.Price {
+    font-size: 36px;
+}
+
+.AddToCart, .Availability {
+    font-size: 14px;
+}
+
+.AddToCart button {
+    width: 130px;
+    height: 40px;
+    background: #FF9900;
+    border-radius: 6px;
+}
+
+.AddToCart button a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Text {
+    margin-top: 75px;
+}
+.Text span {
+    font-size: 24px;
+    line-height: 40px;
+}
+.Text p {
+    width: 640px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.Categories {
+    width: 860px;
+    height: 60px;
+    background: #FBFBFB;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.Category {
+    width: 215px;
+    border: 1px solid #E0D6D6;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+}
+.Page1 {
+    margin-top: 70px;
+}
+.Page1 .col-2, .Page1 .col-md-auto {
+    font-size: 18px;
+    line-height: 50px;
+    color: #000000;
+}
+
+#infoPage {
+    height: 1900px;
+}
+
+.LastSeen {
+    margin-top: 60px;
+}
+
+.LastSeen span {
+    font-size: 20px;
+    line-height: 50px;
+}
