@@ -189,20 +189,23 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0;
+    left:0;
     z-index: 101;
+    margin: 0;
 
 }
 .Menu.mobile img {
     padding-top: 13px;
     padding-bottom: 12px;
-    width: 25px;
+    width: 50px;
     height: 25px;
 }
 .Menu.mobile ul {
+    width: 100%;
     list-style-type: none;
     height: 50px;
     margin: 0;
-    padding: 0 5px;
+    padding: 0 0 0 5px;
     min-width: 50px;
     display: flex;
     justify-content: space-between;
@@ -495,18 +498,29 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: #FFFFFF;
-    width: 570px;
+    width: 500px;
     height: 54px;
     opacity: 0.8;
     border: 1px solid #ccc;
 }
 
 .CatalogHeader .Icons {
-    padding-top: 20px;
+    width: 20%;
+}
+.CatalogHeader .Icons ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 50px;
+    padding-left: 5%;
+}
+.CatalogHeader .Icons li{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
 }
 .CatalogHeader .Icons img{
     height: 35px;
-    margin-left: 65px;
     margin-right: 0;
 }
 
@@ -547,7 +561,7 @@ body {
     font-family: Montserrat,serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
+    font-size: 4em;
     line-height: 160px;
     z-index: 5;
     color: #000000;
@@ -644,13 +658,13 @@ aside span {
 }
 
 .Page_section {
-    margin-left: 100px;
+    margin-left: 5%;
 }
 .Page_section h1{
-    width: 702px;
+    width: 100%;
     height: 94px;
 
-    font-size: 44px;
+    font-size: 2.75em;
     line-height: 54px;
     text-align: center;
     margin-bottom: 0;
@@ -658,33 +672,35 @@ aside span {
 }
 
 .Book {
-    width: 100px;
-    height: 239px;
+    width: 30%;
+    height: calc(100% + 30px) !important;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px 20px 0;
-    margin: 0 15px 30px;
+    margin: 0 30px 30px 0;
 }
 
 .Book img {
-    width: 100px;
-    height: 150px;
+    width: 100%;
 }
-
+.Book span {
+    display: block;
+    width: 100%;
+}
 .Book .name {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 1.7em;
+    line-height: 0.7em;
 }
 
 .Book .author {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 0.625em;
+    line-height: 1em;
 }
 
 .Book .price {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1em;
+    line-height: 1.063em;
 }
 
 .rw {
@@ -694,6 +710,7 @@ aside span {
 
 .Pages {
     text-align: center;
+    width: 100%;
     margin-top: 30px;
 }
 .Pages a{
@@ -1098,8 +1115,105 @@ aside span {
 
         color: #000000;
     }
+    .MainPage {
+        position: relative;
+        height: 1600px;
+    }
 
+    .catalog.mobile {
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 1250px;
+    }
 
+    .header.mobile {
+        height: 110px;
+        background-image:
+        linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url("../images/upper-header.png");
+    }
+    .header.mobile .logo img {
+        width: 55px;
+        height: 55px;
+        margin-right: 15px;
+    }
+    .header.mobile .logo {
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+    .header.mobile .container {
+        height: 110px;
+    }
+
+    .catalog.mobile .Buttons, .catalog.tablet .Buttons {
+        width: 100%;
+        height: 60px;
+        background: #FBFBFB;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .catalog.mobile .Button, .catalog.tablet .Button {
+        width: 50%;
+        border: 1px solid #E0D6D6;
+        box-sizing: border-box;
+        line-height: 60px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .currentPage {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+        margin-top: 30px;
+        color: #000000;
+    }
+
+    .BookSlide {
+        width: 100%;
+        height: 211px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background: #F1F1F1;
+        display: flex;
+    }
+    .BookSlide img {
+        display: block;
+    }
+    .BookSlide .Image, .BookSlide .BookInfo {
+        width: 50%;
+        padding: 30px 0 30px 15px;
+    }
+
+    .BookSlide span {
+        display: block;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .BookSlide .name {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .BookSlide .author {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .BookSlide .price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .BookSlide .AddToCart button {
+        width: 90%;
+        padding-right: 5%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -1134,4 +1248,96 @@ aside span {
         padding-top: 15px;
     }
 
+}
+
+@media screen and (max-width: 599px) {
+    .catalog.tablet {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .catalog.mobile {
+        display: none;
+    }
+
+    .catalog.tablet .d-flex {
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .catalog.tablet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .CatalogHeader .Icons .small {
+        display: none;
+    }
+    .Book {
+        width: 25%;
+        transition: all 0.5s ease;
+    }
+    .Book span {
+        width: calc(100% - 1em);
+    }
+    .last {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .last {
+        display: none;
+    }
+    .Book {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .last {
+        display: none;
+    }
+    .Book {
+        width: 10%;
+        margin-right: 15px;
+    }
+
+    .CatalogHeader .searchBar #site-search {
+        width: 300px;
+    }
+    .CatalogHeader .searchBar {
+        width: 354px;
+        margin-right: 0;
+    }
+    .CatalogHeader form {
+        width: 354px;
+    }
+    .Banner {
+        font-size: 3em;
+    }
+    .Page_section h1 {
+        font-size: 1.5em;
+    }
+    .Pages a {
+        font-size: 0.7em;
+        margin-right: 15px;
+    }
+    .Options {
+        height: 100px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    aside {
+        height: 700px;
+    }
+    .content.desktop {
+        height: 1000px;
+    }
+    .content.desktop .container {
+        height: 1000px;
+    }
 }
